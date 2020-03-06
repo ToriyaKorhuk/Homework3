@@ -1,0 +1,541 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Our style*/
+
+.wrapper{
+	max-width: 1920px;
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Proxima Nova Regular';
+}
+.slash{
+	position: relative;
+	width:315px ;
+	border-bottom: 5px solid;
+	border-color: #5e42b0;
+	transform: rotate(-45deg);
+	top: 280px; /*при изменении топ не становится*/
+	left: 210px;
+	z-index: 2;
+
+
+
+
+}
+.center{
+	max-width: 1550px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+header{
+	height: 100vh;
+	width: 100%;
+	background-image: url('./images/football.png');
+	background-size: cover;
+	max-height: 960px;
+}
+
+header .logo{
+	margin-top: 55px;
+}
+
+header .right_text{
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Proxima Nova Light';
+	text-transform: uppercase;
+	float: right;
+	margin-top: 65px;
+}
+
+header h1{
+	font-size: 60px; /* при 90 2 строки*/
+	font-family: 'Proxima Nova Bold';
+	color: #fff;
+	margin-top: 25vh;
+}
+
+header h1 span{
+	float: right;
+}
+
+header .menu{
+	clear: both;
+	float: right;
+}
+
+header .menu li{
+	display: inline-block;
+}
+
+header .menu li a{
+	text-decoration: none;
+	color: #9171ea;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 0 25px;
+}
+
+header .menu li a:hover{
+	color: #fff;
+}
+
+header .buttons{
+	clear: both;
+	text-align: center;
+	margin-top: 30vh;
+}
+
+header .buttons a{
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	width: 180px;
+	font-family: 'Proxima Nova Light';
+	padding: 5px 65px 20px 43px;
+	background-color: #5e42b0;
+	border-radius: 40px;
+}
+
+header .buttons a i{
+	font-size: 37px;
+	margin-right: 20px;
+	position: relative;
+	top: 15px;
+}
+
+header .buttons a span{
+	margin-left: 52px;
+	font-family: 'Proxima Nova Semibold';
+}
+
+header .buttons a:first-child{
+	margin-right: 50px;
+}
+
+header .buttons a:hover{
+	color: #5e42b0;
+	background-color: #fff;
+}
+.container4{
+	width: 100%;
+	height: 100%;
+}
+.container4 .image{
+	display: block;
+	background-image: url('./images/1.png') ;
+	width: 49.5%;
+	height: 100vh;
+	max-height: 730px;
+	background-size: cover;
+	background-position: left;
+}
+.container4 .object{
+	position: absolute;
+	left: 50%;
+	margin-right: -150px;
+    margin-top: -70vh;
+    margin-left: -90px;
+	background-color: #5e42b0;
+	width: 169px;
+	height: 155px;
+}
+.container4 .object p{
+	font-family:'Proxima Nova Bold';
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	margin-top: 70px;
+	margin-right: 3px;
+	
+}
+.container4 .firstdash{
+	position: absolute;
+	background-color: #8f7bc8;
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	margin-left: 70px;
+}
+.container4 .text{
+	margin-left: 210px;
+}
+.container4 .text h2{
+	clear: both;
+	position: relative;
+	font-family: 'Proxima Nova Bold';
+	font-size: 63px;
+	color:#e6e6e6;
+	min-width: 440px;
+	min-height: 71px;
+	margin-top: -7vh;
+
+}
+.container4 .text .text-1{
+	clear: both;
+	position: relative;
+	font-family:'Proxima Nova Regular';
+	color:#000000;
+	font-size: 16px;
+	/*text-shadow: 1px 1px 2px black, 0 0 1em grey; /**/
+	min-width: 329px;
+	min-height: 77px;
+	text-align: left;
+}
+.container4 .seconddash{
+	clear: both;
+	position: relative;
+	background-color: #5e42b0;
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	right: -41vh;
+
+}
+.container5{
+	clear: both;
+	width: 100%;
+	height: 100%;
+}
+.container5 .image1{
+	clear: both;
+	display: block;
+	background-image: url('./images/2.png');
+	width: 50.5%;
+	height: 100vh;
+	max-height: 730px;
+	background-size: cover;
+	background-position: right;
+	margin-left: auto;
+}
+
+.container5 .object{
+	position: absolute;
+	left: 50%;
+	margin-right: -150px;
+    margin-top: -70vh;
+    margin-left: -90px;
+	background-color: #5e42b0;
+	width: 169px;
+	height: 155px;
+}
+.container5 .object p{
+	font-family:'Proxima Nova Bold';
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	margin-top: 70px;
+	margin-right: 3px;
+	
+}
+.container5 .firstdash{
+	position: absolute;
+	background-color: #8f7bc8;
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	margin-left: 70px;
+}
+.container5 .text{
+	margin-left:-400px;
+}
+.container5 .text h2{
+	clear: both;
+	position: relative;
+	font-family: 'Proxima Nova Bold';
+	font-size: 63px;
+	color:#e6e6e6;
+	max-width: 660px;
+	min-height: 71px;
+	margin-top: -7vh;
+
+}
+.container5 .text .text-1{
+	clear: both;
+	position: relative;
+	font-family:'Proxima Nova Regular';
+	color:#000000;
+	font-size: 16px;
+	/*text-shadow: 1px 1px 2px black, 0 0 1em grey; /**/
+	min-width: 329px;
+	min-height: 77px;
+	text-align: left;
+}
+.container5 .seconddash{
+	clear: both;
+	position: relative;
+	background-color: #5e42b0;
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	left:-400px;
+
+}
+.container6{
+	clear: both;
+	width: 100%;
+	height: 100%;
+}
+
+.container6 .image2{
+	display: block;
+	position: relative;
+	background-image: url('./images/3.png') ;
+	width: 49.5%;
+	height: 100vh;
+	max-height: 730px;
+	background-size: cover;
+	background-position: left;
+}
+.container6 .object{
+	position: absolute;
+	left: 50%;
+	margin-right: -150px;
+    margin-top: -70vh;
+    margin-left: -90px;
+	background-color: #5e42b0;
+	width: 169px;
+	height: 155px;
+}
+.container6 .object p{
+	font-family:'Proxima Nova Bold';
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	margin-top: 70px;
+	margin-right: 3px;
+	
+}
+.container6 .firstdash{
+	position: absolute;
+	background-color: #8f7bc8;
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	margin-left: 70px;
+}
+.container6 .text{
+	margin-left: 210px;
+}
+.container6 .text h2{
+	clear: both;
+	position: relative;
+	font-family: 'Proxima Nova Bold';
+	font-size: 63px;
+	color:#e6e6e6;
+	min-width: 440px;
+	min-height: 71px;
+	margin-top: -7vh;
+
+}
+.container6 .text .text-1{
+	clear: both;
+	position: relative;
+	font-family:'Proxima Nova Regular';
+	color:#000000;
+	font-size: 16px;
+	/*text-shadow: 1px 1px 2px black, 0 0 1em grey; /**/
+	min-width: 329px;
+	min-height: 77px;
+	text-align: left;
+}
+.container6 .seconddash{
+	clear: both;
+	position: relative;
+	background-color: #5e42b0;
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	right: -41vh;
+
+}
+footer{
+	width: 100%;
+	height: 100vh;
+	background-image: url('./images/footer.png');
+	background-size: cover;
+	max-height: 1090px;
+
+}
+footer .center {
+	position: relative;
+    max-width: 1550px;
+    margin: 0 auto;
+	width: 90%;
+    padding: 100px;
+}
+footer .center .image3{
+	position: absolute;
+	width: 135px;
+	height: 135px;
+	display: inline-block;
+	margin-right:5px;
+
+}
+
+footer .center p  {
+	position: relative;
+	font-size: 60px; 
+	text-align: center;
+	font-family: 'Proxima Nova Bold';
+	color: #fff;
+	/*margin-top: 20px;*/
+	
+}
+footer .center span {
+	clear: both;
+	text-align: center;
+	font-size: 26px;
+	font-family: 'Proxima Nova Bold';
+	color:#a496ca;
+
+}
+
+
+footer .dash1{
+	position: relative;
+	border-bottom: 4px solid #9172e6;
+	width: 158px;
+	transform: rotate(-45deg);
+	left: 350px;
+    top: -189px;
+	z-index: 1;
+
+}
+footer .dash2{
+	position: relative;
+    text-align: center;
+    border-bottom: 4px solid #9172e6;
+    width: 232px;
+    transform: rotate(-45deg);
+    left: 498px;
+    top: -160px;
+    z-index: 2;
+
+}
+
+footer .buttons {
+	clear: both;
+	text-align: center;
+	margin-top: 15vh;
+}
+
+footer .buttons a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	width: 180px;
+	font-family: 'Proxima Nova Light';
+	padding: 5px 65px 20px 43px;
+	background-color: #5e42b0;
+	border-radius: 40px;
+}
+
+footer .buttons a i {
+	font-size: 37px;
+	margin-right: 20px;
+	position: relative;
+	top: 15px;
+}
+
+footer .buttons a span {
+	margin-left: 7px;
+	font-family: 'Proxima Nova SemiBold';
+}
+
+footer .buttons a .google {
+	margin-left: 90px;
+	font-family: 'Proxima Nova SemiBold';
+}
+
+footer .buttons a:first-child {
+	margin-right: 50px;
+}
+
+footer .buttons a:hover {
+	color: #5e42b0;
+	background-color: #ffffff;
+}
+ footer .end{
+	 clear: both;
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+	left: 0;
+	background-color:#14173c;
+	overflow: hidden;
+
+}
+footer .end .right_text{
+	clear: both;
+	font-family: 'Proxima Nova Regular';
+	font-size: 11px;
+	color:#ffffff;
+	float:right ;
+	margin-right: 77px;
+	
+}
+footer .logo4{
+	clear: both;
+	position: relative;
+	bottom: 35px;
+	text-align: center;
+	z-index: 4;
+
+}
+footer .logo4  a{
+	color: #ffffff;
+}
+footer .logo4  a i{
+	font-size: 27px;
+	margin-right: 23px;
+}
